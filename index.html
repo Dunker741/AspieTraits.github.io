@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Starfleet Academy</title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web|Mina|Gloria+Hallelujah" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+</head>
+<body>
+  <div class="section">
+    <div class="container">
+    <header id="duration" class="animated lightSpeedIn">
+      <h1 class="title">Aspen Traits</h1>
+    </header>
+    <p id="description" class="animated lightSpeedIn">At Aspen Star Base Academy, we strive to create a truly revolutionary and future-based learning experience.
+      This means we will work with our student Aspens not only on their academic skills, but their behavioral skills as well.
+      We believe that this more comprehensive approach will benefit students exponentially more than traditional education systems.
+      <br/><br/>    
+      One way we plan to do this is by recognizing common Aspen traits, isolating them, and dealing with them accordingly. 
+      We have seperated 53 of the most common Aspen traits into 3 different categories.
+      A green trait is a positive trait we want to not only keep, but promote.
+      A yellow trait is neutral. It can be good or bad depending on the situation. Or perhaps it's a negative trait that can't 
+      be entirely eliminated. Therefore we want to control or modify it as much as possible. 
+      A red trait is a negative trait that tends to hold Aspens back in life. These are traits we will seek to eliminate or at least minimize.
+      <br/>
+      <br/>
+      Click on the buttons below to view the traits! 
+    </p>
+    </div>
+  </div>
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+    <button type="button" class="btn btn-success animated lightSpeedIn">Green Traits</button>
+    <ul class="green_traits">      
+      <li>See the world through different eyes</li>
+      <li>Prodigy</li>
+      <li>Exceptional pattern recognition</li>
+      <li>Consider limits for others/try to go past personal limits</li>
+      <li>Lack racial prejudice</li>
+      <li>Fairly rigid ethical code</li>
+      <li>Not restricted in thinking by conventions of the herd</li>
+      <li>Ability to focus</li>
+      <li>Need for justice</li>
+      <li>Carefulness (fear of mistakes)</li>
+      <li>Unusual language abilities</li>
+      <li>Honesty</li>
+      <li>Give or receive without obligatory reciprocity</li>
+      <li>Abstract thinking powers</li>
+    </ul>
+  </div>
+  <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+    <button type="button" id="bounce2" class="btn btn-warning animated lightSpeedIn">Yellow Traits</button>
+    <ul class="yellow_traits">
+      <li>Obsessive interest in a topic</li>
+      <li>Too literal</li>
+      <li>Active but odd</li>
+      <li>Alone more than average</li>
+      <li>Not looking in the eye</li>
+      <li>Fantasy world</li>
+      <li>One sided conversations about their interests</li>
+      <li>Fairly rigid ethical code</li>
+      <li>Hypersensitivity</li>
+      <li>Nonfunctional rituals or routines</li>
+      <li>Saying things without considering impact</li>
+      <li>Self-centeredness</li>
+      <li>Eccentric or repetitive behavior (stimming)</li>
+      <li>Preoccupied with parts of objects</li>
+      <li>Verbality</li>
+      <li>Giving things peculiar names</li>
+      <li>Unusual nonverbal communication</li>
+  </ul>
+  </div>
+  <div class="col-lg-4 col-md-3 col-sm-6 col-xs-12">
+    <button type="button" id="bounce3" class="btn btn-danger animated lightSpeedIn">Red Traits</button>
+    <ul class="red_traits">
+      <li>Lack of proper emotions/emotional control</li>
+      <li>Selective mutism</li>
+      <li>Impaired social skills</li>
+      <li>Motor skill problem/awkward</li>
+      <li>Not looking in the eye</li>
+      <li>Trouble making friends</li>
+      <li>Hypersensitivity</li>
+      <li>Irrational fears</li>
+      <li>Saying things without considering impact</li>
+      <li>Difficulty understanding social situations</li>
+      <li>Self-centeredness</li>
+      <li>Discomfort in crowds</li>
+      <li>Self-absorbed/uninterested in other people</li>
+      <li>Stereotyped and repetitive motor mannerisms</li>
+      <li>Not mirroring the expressions of others</li>
+      <li>Impairment in the ability to initiate or sustain conversation</li>
+      <li>Impairment of comprehension</li>
+      <li>Don't recognize evil doers</li>
+      <li>Aggression/violent outburst</li>
+      <li>Lack of rhythm in speech/odd inflection</li>
+      <li>Inappropriate expressions and responses</li>
+      <li>Destructivity</li>
+      <li>Unusual nonverbal communication</li>
+      <li>Insensitive to others' feelings</li>
+      <li>Bottled up anger</li>
+      <li>Depression and suicide (death wish)</li>
+      <li>Internalizing other people's problems</li>
+    </ul>
+  </div>
+  </div>
+  </div>
+
+  <script>
+
+    $(document).ready(function(){
+      $(".btn-success").on("click", function(){
+        $(".green_traits").toggleClass("green");
+      });
+
+      $(".btn-warning").on("click", function(){
+        $(".yellow_traits").toggleClass("yellow");
+      });
+
+      $(".btn-danger").on("click", function(){
+        $(".red_traits").toggleClass("red");
+      });
+    }); 
+
+
+  </script>
+  
+</body>
+</html>

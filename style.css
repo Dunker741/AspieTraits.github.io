@@ -1,0 +1,99 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#duration{
+  animation-duration: 2s;
+}
+
+#bounce{
+  animation-delay: 1s;
+}
+
+#bounce2{
+  animation-delay: 1.5s;
+}
+
+#bounce3{
+  animation-delay: 2s;
+} 
+
+.section{
+  background-color: #FFDAB9;
+}
+
+.title{
+  animation-delay: 5s;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+
+ul{
+  padding-left: 10px
+}
+
+.row{
+  color: white;
+} 
+
+ul li{
+  color: black;
+  transition: all 2s ease;
+}
+
+.green_traits, .red_traits, .yellow_traits{
+  margin-top: 20px;
+  transition: background-color 2s ease;
+  padding: 20px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.green{
+  background-color: green;
+  border-radius: 25px;
+}
+
+
+.red{
+  background-color: #DC143C;
+  border-radius: 25px;
+}
+
+
+.yellow{
+  background-color: #FFD700;
+  border-radius: 25px;
+}
+
+.container{
+  padding: 10px 25px;
+  font-family: 'Mina', sans-serif;
+}
+
+#description{
+  text-align: justify;
+  animation-duration: 2s
+}
+
+opacity_one{
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn{
+  font-family: 'Gloria Hallelujah', cursive;
+  position: relative;
+  margin-left: 30%;
+  color: black;
+}
+
+.btn:hover{
+  color: white;
+}
